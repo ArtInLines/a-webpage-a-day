@@ -12,7 +12,8 @@ input {
 }
 
 .numInput {
-	width: 2em;
+	width: 2.5em;
+	min-width: fit-content;
 }
 
 .textInput {
