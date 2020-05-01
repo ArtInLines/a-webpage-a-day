@@ -47,7 +47,7 @@ function changeSelectValue() {
 		case 'chars':
 			collection = charArray;
 			title.innerHTML = 'Select your favorite <code>Character</code>';
-			p.innerHTML = `You changed to rank only the <code> id="loser"important Characters</code>`;
+			p.innerHTML = `You changed to rank only the <code id="loser">important Characters</code>`;
 			break;
 		case 'povChars':
 			collection = arrayPOVChars;
