@@ -1,4 +1,4 @@
-const arrayBooks = [
+export const arrayBooks = [
 	{
 		name: 'A Game of Thrones',
 		img: ['AGOT'],
@@ -50,5 +50,3 @@ const arrayBooks = [
 		counter: 0,
 	},
 ];
-
-module.exports = arrayBooks;

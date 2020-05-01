@@ -1,4 +1,4 @@
-const arrayHouses = [
+export const arrayHouses = [
 	{
 		name: 'Stark',
 		important: true,
@@ -350,5 +350,3 @@ const arrayHouses = [
 		counter: 0,
 	},
 ];
-
-module.exports = arrayHouses;

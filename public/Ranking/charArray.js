@@ -1,4 +1,4 @@
-const charArray = [
+export const charArray = [
 	{
 		name: 'Eddard Stark',
 		house: ['Stark'],
@@ -506,5 +506,3 @@ const charArray = [
     },
     */
 ];
-
-module.exports = charArray;
