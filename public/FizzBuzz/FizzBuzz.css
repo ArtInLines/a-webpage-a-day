@@ -1,0 +1,13 @@
+.content {
+	margin: 1em;
+}
+
+#result {
+	padding: 0;
+}
+
+.resultListItem {
+	list-style: none;
+	text-align: center;
+	width: 100%;
+}

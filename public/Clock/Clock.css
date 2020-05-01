@@ -1,0 +1,146 @@
+.container {
+	position: relative;
+}
+
+#btns {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#digitalClock {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	font-size: 2.5em;
+	text-decoration: underline;
+}
+
+.btn {
+	font-size: 1.5em;
+	background-color: white;
+	border: 2px solid #333;
+	color: #333;
+	border-radius: 15px;
+	margin: 1em;
+	padding: 10px;
+	cursor: pointer;
+	outline: none;
+}
+
+.btn:hover {
+	transition-delay: 0.1s;
+	transition-duration: 0.5s;
+	background-color: #eee;
+	color: #000;
+	border-color: #000;
+}
+
+#analogDiv {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.analog {
+	display: none;
+	width: 300px;
+	height: 300px;
+	background-color: rgba(220, 220, 220, 0.8);
+	border-radius: 50%;
+	border: 2px solid #000;
+	position: relative;
+}
+
+.analog .number {
+	--rotation: 0;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	transform: rotate(var(--rotation));
+	font-size: 1.5em;
+}
+
+.analog .num1 {
+	--rotation: 30deg;
+}
+.analog .num2 {
+	--rotation: 60deg;
+}
+.analog .num3 {
+	--rotation: 90deg;
+}
+.analog .num4 {
+	--rotation: 120deg;
+}
+.analog .num5 {
+	--rotation: 150deg;
+}
+.analog .num6 {
+	--rotation: 180deg;
+}
+.analog .num7 {
+	--rotation: 210deg;
+}
+.analog .num8 {
+	--rotation: 240deg;
+}
+.analog .num9 {
+	--rotation: 270deg;
+}
+.analog .num10 {
+	--rotation: 300deg;
+}
+.analog .num11 {
+	--rotation: 330deg;
+}
+
+.analog .hand {
+	--rotation: 30deg;
+	position: absolute;
+	bottom: 50%;
+	left: 50%;
+	border: 1px solid white;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	transform-origin: bottom;
+	transform: translateX(-50%) rotate(var(--rotation));
+}
+
+.analog::after {
+	content: '';
+	position: absolute;
+	background-color: #000;
+	z-index: 100;
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.analog .hand.second {
+	width: 3px;
+	height: 45%;
+	background-color: red;
+	z-index: 5;
+}
+
+.analog .hand.minute {
+	width: 6px;
+	height: 40%;
+	background-color: #222;
+	z-index: 10;
+}
+
+.analog .hand.hour {
+	width: 10px;
+	height: 35%;
+	background-color: #000;
+	z-index: 15;
+}

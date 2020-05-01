@@ -1,0 +1,46 @@
+body {
+	overflow: hidden;
+}
+
+.container {
+	position: relative;
+	height: 100%;
+}
+
+#changeBackgroundColorBtn {
+	outline: none;
+	font-size: 1em;
+	color: #000;
+	font-weight: 600;
+	border: grey solid 2px;
+	border-radius: 15px;
+	padding: 15px;
+	background-color: #fff;
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+#changeBackgroundColorBtn:hover {
+	transition-delay: 0.15s;
+	transition-duration: 0.75s;
+	border: #333 solid 2px;
+}
+
+#backgroundColor {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	margin-top: 4em;
+	font-size: 1em;
+	font-weight: 600;
+	padding: 10px 0;
+	background-color: white;
+	border: grey solid 2px;
+	border-radius: 15px;
+	text-align: center;
+	width: 7em;
+}

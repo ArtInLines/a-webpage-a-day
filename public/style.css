@@ -1,0 +1,105 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+html,
+body,
+.container {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.navbar {
+	position: relative;
+	top: 0;
+	width: 100%;
+	background-color: #333;
+	display: flex;
+	align-items: center;
+	height: 3em;
+}
+
+.navLink {
+	position: absolute;
+	left: 0;
+	padding: 10px;
+	color: dodgerblue;
+	text-decoration: none;
+}
+
+.navLink:visited {
+	position: absolute;
+	left: 0;
+	padding: 10px;
+	color: dodgerblue;
+	text-decoration: none;
+}
+
+.currentPage {
+	margin: 0 auto;
+	color: #ccc;
+	font-size: 1.3em;
+}
+
+a {
+	color: dodgerblue;
+	text-decoration: none;
+}
+
+a:visited {
+	color: dodgerblue;
+	text-decoration: none;
+}
+
+header {
+	padding-top: 1em;
+	border-bottom: #111 solid 1px;
+}
+
+.title {
+	margin: 0;
+	text-align: center;
+	padding: 0.3em;
+	text-decoration: underline;
+}
+
+.subTitle {
+	margin: 0;
+	text-align: center;
+	padding: 0.3em;
+	color: #444;
+}
+
+.content {
+	height: auto;
+}
+
+#pageList {
+	margin-left: 20px;
+}
+
+.pageListItem {
+	margin-top: 5px;
+	font-size: 1.05em;
+}
+
+@media only screen and (max-width: 500px) {
+	.navbar {
+		height: 4.5em;
+	}
+	.navLink {
+		text-align: center;
+		width: 100%;
+		position: absolute;
+		top: 0.5em;
+	}
+	.currentPage {
+		text-align: center;
+		position: absolute;
+		bottom: 0.5em;
+		width: 100%;
+	}
+}

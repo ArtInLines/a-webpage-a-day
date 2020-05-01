@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/assets/favicon.ico">
+    <link rel="stylesheet" href="/assets/style.css">
+    <link rel="stylesheet" href="/assets/FizzBuzz/FizzBuzz.css">
+    <title>FizzBuzz</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="/" class="navLink">A Webpage a day</a>
+        <h5 class="currentPage">FizzBuzz</h5>
+    </nav>
+    <div class="content">
+        <div id="inputs">
+            <div class="gridItem" id="FizzReplacement">
+                <span class="replacementText">
+                    When divisble by <input type="number" name="fizzNum" id="fizzNum" value="3"> say <input type="text"
+                        name="fizzText" id="fizzText" value="Fizz">
+                </span>
+            </div>
+            <div class="gridItem" id="BuzzReplacement">
+                <span class="replacementText">
+                    When divisble by <input type="number" name="buzzNum" id="buzzNum" value="5"> say <input type="text"
+                        name="buzzText" id="buzzText" value="Buzz">
+                </span>
+            </div>
+            <div class="gridItem" id="FizzBuzzReplacement">
+                <span class="replacementText">
+                    When divisble by both, say <input type="text" name="fizzBuzzText" id="fizzBuzzText"
+                        value="FizzBuzz">
+                </span>
+            </div>
+            <div id="start">
+                <label for="startInput">From:</label>
+                <input type="number" name="startInput" id="startNum" value="1">
+            </div>
+            <div id="end">
+                <label for="endInput">To:</label>
+                <input type="number" name="endInput" id="endNum" value="100">
+            </div>
+            <div class="gridItem" id="steps">
+                <label for="stepInput">Step:</label>
+                <input type="number" name="stepInput" id="stepInput" value="1">
+            </div>
+        </div>
+        <div id="btns">
+            <button class="btn" id="auto">Generate the results</button>
+        </div>
+        <ul id="result"></ul>
+    </div>
+
+    <script src="/assets/FizzBuzz/FizzBuzz.js"></script>
+</body>
+
+</html>

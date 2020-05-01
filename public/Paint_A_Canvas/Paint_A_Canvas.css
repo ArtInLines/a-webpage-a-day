@@ -1,0 +1,131 @@
+#colorpicker {
+  height: 4em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.colorBtn {
+  width: 5.5em;
+  height: 2.5em;
+  outline: none;
+  border: grey solid 1px;
+  cursor: copy;
+  margin: 0 0.5em;
+}
+
+.colorBtn:hover {
+  transition-duration: 0.3s;
+  border: black solid 2px;
+}
+
+.active {
+  border: royalblue solid 3px;
+  width: 6em;
+  height: 3em;
+}
+
+.active:hover {
+  border: royalblue solid 3px;
+}
+
+#btnTransparent {
+  background-color: transparent;
+}
+
+#btnRed {
+  background-color: red;
+}
+
+#btnGreen {
+  background-color: green;
+}
+
+#btnBlue {
+  background-color: blue;
+}
+
+#btnChosen {
+  background-color: transparent;
+}
+
+#colorInput {
+  margin: 0 0.5em;
+  padding: 4px 6px;
+  width: 7em;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  border-bottom: black solid 2px;
+  font-size: 1em;
+}
+
+#colorInput:focus {
+  transition-duration: 0.5s;
+  border-bottom: royalblue solid 2px;
+}
+
+#canvas {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  height: 600px;
+  width: 800px;
+  margin: 10px auto;
+  border: 1px solid black;
+}
+
+.canvasItem {
+  display: inline-block;
+  cursor: copy;
+  background-color: transparent;
+}
+
+.border {
+  border: 1px solid black;
+}
+
+#toggleCanvasBorders {
+  display: block;
+  margin: 15px auto;
+  padding: 5px;
+  font-size: 1em;
+  outline: none;
+  background-color: transparent;
+  border: 1px solid #333;
+  border-radius: 15px;
+  cursor: pointer;
+  color: #333;
+}
+
+#toggleCanvasBorders:hover {
+  transition-delay: 0.1s;
+  transition-duration: 0.4s;
+  font-size: 1.1em;
+  border-color: black;
+  color: black;
+}
+
+#toggleCanvasBorders:active {
+}
+
+@media only screen and (max-width: 820px), (max-height: 700px) {
+  #canvas {
+    height: 450px;
+    width: 600px;
+  }
+}
+
+@media only screen and (max-width: 620px), (max-height: 550px) {
+  #canvas {
+    height: 300px;
+    width: 400px;
+  }
+}
+
+@media only screen and (max-width: 420px), (max-height: 400px) {
+  #canvas {
+    height: 225px;
+    width: 300px;
+  }
+}

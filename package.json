@@ -1,0 +1,27 @@
+{
+	"name": "js-a-website-a-day",
+	"version": "1.0.0",
+	"description": "",
+	"main": "server.js",
+	"scripts": {
+		"dev": "nodemon server",
+		"start": "node server"
+	},
+	"keywords": [
+		"example",
+		"heroku"
+	],
+	"author": "ArtInLines",
+	"license": "MIT",
+	"dependencies": {
+		"body-parser": "^1.19.0",
+		"express": "^4.17.1",
+		"serve-favicon": "^2.5.0"
+	},
+	"devDependencies": {
+		"nodemon": "^2.0.3"
+	},
+	"engines": {
+		"node": "12.x"
+	}
+}

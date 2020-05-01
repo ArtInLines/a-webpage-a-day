@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/assets/favicon.ico">
+    <link rel="stylesheet" href="/assets/style.css">
+    <link rel="stylesheet" href="/assets/Paint_A_Canvas/Paint_A_Canvas.css">
+    <title>Paint A Canvas</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="/" class="navLink">A Webpage a day</a>
+        <h5 class="currentPage">Change Background Color</h5>
+    </nav>
+    <div class="content">
+        <div id="colorpicker">
+            <button class="colorBtn" onclick="choseColor('transparent')" id="btnTransparent"></button>
+            <button class="colorBtn" onclick="choseColor('red')" id="btnRed"></button>
+            <button class="colorBtn" onclick="choseColor('green')" id="btnGreen"></button>
+            <button class="colorBtn" onclick="choseColor('blue')" id="btnBlue"></button>
+            <input type="text" name="colorInput" id="colorInput" value="#" maxlength="7">
+            <button class="colorBtn" onclick="choseColor('hexcolor')" id="btnChosen"></button>
+        </div>
+        <div id="canvas">
+            <div class="canvasItem border" onclick="Coloring()" id="item02"></div>
+            <div class="canvasItem border" onclick="Coloring()" id="item01"></div>
+            <div class="canvasItem border" onclick="Coloring()" id="item03"></div>
+            <div class="canvasItem border" onclick="Coloring()" id="item04"></div>
+            <div class="canvasItem border" onclick="Coloring()" id="item05"></div>
+            <div class="canvasItem border" onclick="Coloring()" id="item06"></div>
+            <div class="canvasItem border" onclick="Coloring()" id="item07"></div>
+            <div class="canvasItem border" onclick="Coloring()" id="item08"></div>
+            <div class="canvasItem border" onclick="Coloring()" id="item09"></div>
+            <div class="canvasItem border" onclick="Coloring()" id="item10"></div>
+            <div class="canvasItem border" onclick="Coloring()" id="item11"></div>
+            <div class="canvasItem border" onclick="Coloring()" id="item12"></div>
+            <div class="canvasItem border" onclick="Coloring()" id="item13"></div>
+            <div class="canvasItem border" onclick="Coloring()" id="item14"></div>
+            <div class="canvasItem border" onclick="Coloring()" id="item15"></div>
+            <div class="canvasItem border" onclick="Coloring()" id="item16"></div>
+            <div class="canvasItem border" onclick="Coloring()" id="item17"></div>
+            <div class="canvasItem border" onclick="Coloring()" id="item18"></div>
+            <div class="canvasItem border" onclick="Coloring()" id="item19"></div>
+            <div class="canvasItem border" onclick="Coloring()" id="item20"></div>
+            <div class="canvasItem border" onclick="Coloring()" id="item21"></div>
+            <div class="canvasItem border" onclick="Coloring()" id="item22"></div>
+            <div class="canvasItem border" onclick="Coloring()" id="item23"></div>
+            <div class="canvasItem border" onclick="Coloring()" id="item24"></div>
+            <div class="canvasItem border" onclick="Coloring()" id="item25"></div>
+            <div class="canvasItem border" onclick="Coloring()" id="item26"></div>
+            <div class="canvasItem border" onclick="Coloring()" id="item27"></div>
+            <div class="canvasItem border" onclick="Coloring()" id="item28"></div>
+            <div class="canvasItem border" onclick="Coloring()" id="item29"></div>
+            <div class="canvasItem border" onclick="Coloring()" id="item30"></div>
+            <div class="canvasItem border" onclick="Coloring()" id="item31"></div>
+            <div class="canvasItem border" onclick="Coloring()" id="item32"></div>
+            <div class="canvasItem border" onclick="Coloring()" id="item33"></div>
+            <div class="canvasItem border" onclick="Coloring()" id="item34"></div>
+            <div class="canvasItem border" onclick="Coloring()" id="item35"></div>
+            <div class="canvasItem border" onclick="Coloring()" id="item36"></div>
+            <div class="canvasItem border" onclick="Coloring()" id="item37"></div>
+            <div class="canvasItem border" onclick="Coloring()" id="item38"></div>
+            <div class="canvasItem border" onclick="Coloring()" id="item39"></div>
+            <div class="canvasItem border" onclick="Coloring()" id="item40"></div>
+            <div class="canvasItem border" onclick="Coloring()" id="item41"></div>
+            <div class="canvasItem border" onclick="Coloring()" id="item42"></div>
+            <div class="canvasItem border" onclick="Coloring()" id="item43"></div>
+            <div class="canvasItem border" onclick="Coloring()" id="item44"></div>
+            <div class="canvasItem border" onclick="Coloring()" id="item45"></div>
+            <div class="canvasItem border" onclick="Coloring()" id="item46"></div>
+            <div class="canvasItem border" onclick="Coloring()" id="item47"></div>
+            <div class="canvasItem border" onclick="Coloring()" id="item48"></div>
+            <div class="canvasItem border" onclick="Coloring()" id="item49"></div>
+            <div class="canvasItem border" onclick="Coloring()" id="item50"></div>
+            <div class="canvasItem border" onclick="Coloring()" id="item51"></div>
+            <div class="canvasItem border" onclick="Coloring()" id="item52"></div>
+            <div class="canvasItem border" onclick="Coloring()" id="item53"></div>
+            <div class="canvasItem border" onclick="Coloring()" id="item54"></div>
+            <div class="canvasItem border" onclick="Coloring()" id="item55"></div>
+            <div class="canvasItem border" onclick="Coloring()" id="item56"></div>
+            <div class="canvasItem border" onclick="Coloring()" id="item57"></div>
+            <div class="canvasItem border" onclick="Coloring()" id="item58"></div>
+            <div class="canvasItem border" onclick="Coloring()" id="item59"></div>
+            <div class="canvasItem border" onclick="Coloring()" id="item60"></div>
+            <div class="canvasItem border" onclick="Coloring()" id="item61"></div>
+            <div class="canvasItem border" onclick="Coloring()" id="item62"></div>
+            <div class="canvasItem border" onclick="Coloring()" id="item63"></div>
+            <div class="canvasItem border" onclick="Coloring()" id="item64"></div>
+        </div>
+        <button id="toggleCanvasBorders">Toggle outline</button>
+    </div>
+
+    <script src="/assets/Paint_A_Canvas/Paint_A_Canvas.js"></script>
+</body>
+
+</html>

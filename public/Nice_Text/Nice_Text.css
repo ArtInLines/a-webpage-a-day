@@ -1,0 +1,46 @@
+#niceTextLabel {
+	width: 100%;
+	display: block;
+	text-align: center;
+	margin-top: 2em;
+	font-size: 1em;
+	color: #3333338e;
+}
+
+#counter {
+	display: block;
+	text-align: center;
+	font-size: 1em;
+	pad: 0.25em;
+	height: 1.5em;
+}
+
+#niceText {
+	display: block;
+	resize: none;
+	outline: none;
+	border: none;
+	font-size: 1em;
+	margin: 10px auto;
+	text-align: center;
+	color: #111;
+}
+
+.nice {
+	width: 100%;
+	text-align: center;
+	font-size: 1em;
+	color: #111;
+}
+
+#niceImgDiv {
+	width: 0 auto;
+	display: flex;
+	align-items: center;
+}
+
+#niceImg {
+	height: auto;
+	width: 100vw;
+	margin: 0 auto;
+}

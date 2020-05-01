@@ -1,0 +1,92 @@
+#title {
+  text-align: center;
+  display: block;
+  margin: 0;
+  padding-top: 0.4em;
+}
+
+.char {
+  display: inline-block;
+  padding: 0;
+  margin: 0 5vw;
+}
+
+.charName {
+  font-size: 1.3em;
+  margin: 0.5em 0;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.charImg {
+  width: 39vw;
+  height: 60vh;
+  border: 3px solid #333;
+  border-radius: 20px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+}
+
+.charImg:hover {
+  border: 4px solid black;
+}
+
+.charImg:active {
+  border: 6px solid black;
+}
+
+#btn {
+  display: block;
+  margin: 2em auto 5px auto;
+  font-size: 1.3em;
+  background-color: transparent;
+  border: 3px solid #333;
+  border-radius: 15px;
+  padding: 5px 5px 8px 5px;
+  cursor: pointer;
+  min-width: 5em;
+  outline: none;
+}
+
+#btn:hover {
+  border: 4px solid black;
+}
+
+#btn:active {
+  border: 6px solid black;
+}
+
+#endList {
+  margin: 0 auto;
+  width: max-content;
+}
+
+#endList > li {
+  margin: 0.6em;
+  font-size: 1.15em;
+  list-style-type: decimal;
+}
+
+#showMoreBtnsContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.showMoreBtn {
+  display: inline-block;
+  cursor: pointer;
+  font-size: 1em;
+  background-color: none;
+  margin: 10px 1em;
+  border: none;
+  color: black;
+  outline: none;
+}
+
+.showMoreBtn:hover {
+  transition-duration: 0.3s;
+  color: dodgerblue;
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/assets/favicon.ico">
+    <link rel="stylesheet" href="/assets/style.css">
+    <link rel="stylesheet" href="/assets/FormValidator/FormValidator.css">
+    <title>Form Validator</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="/" class="navLink">A Webpage a day</a>
+        <h5 class="currentPage">Form Validator</h5>
+    </nav>
+    <div class="content">
+        <div id="form">
+            <h4 class="form-title">Add your personal information, please</h4>
+            <div class="inputContainer inputTextContainer">
+                <label for="name" class="label">Username</label>
+                <p class="mistakeText" id="nameInputMistakeText">Enter a username</p>
+                <input type="text" name="name" id="name" class="inputText" required>
+            </div>
+            <div class="inputContainer inputTextContainer">
+                <label for="password" class="label">Password<img class="infoImg" src="/assets/FormValidator/info.png"
+                        alt="Info">
+                    <div id="infoDiv">
+                        <ul class="infoList">
+                            <li class="infoListItem">8+ characters</li>
+                            <li class="infoListItem">1+ uppercase letter</li>
+                            <li class="infoListItem">1+ lowercase letter</li>
+                            <li class="infoListItem">1+ number</li>
+                            <li class="infoListItem">1+ special character</li>
+                        </ul>
+                    </div>
+                </label>
+                <img id="passwordEye" class="eyeImg" src="/assets/FormValidator/hidePassword.jpg" alt="Show Password">
+                <p class="mistakeText" id="passwordInputMistakeText">Enter a valid password</p>
+                <input type="password" name="password" id="password" class="inputText inputPassword" required>
+            </div>
+            <div class="inputContainer inputTextContainer">
+                <label for="password-again" class="label">Validate your password</label>
+                <img id="passwordAgainEye" class="eyeImg" src="/assets/FormValidator/hidePassword.jpg"
+                    alt="Show Password">
+                <p class="mistakeText" id="passwordAgainInputMistakeText">Validate your password</p>
+                <input type="password" name="password-again" id="password-again" class="inputText inputPassword"
+                    required>
+            </div>
+            <div class="inputContainer inputTextContainer">
+                <label for="email" class="label">E-Mail</label>
+                <p class="mistakeText" id="emailInputMistakeText">Enter a valid E-Mail</p>
+                <input type="email" name="email" id="email" class="inputText inputEmail" required>
+            </div>
+            <!--
+            <div id="flexDiv">
+                <div class="inputContainer inputGenderContainer">
+                    <label for="" class="label labelAllRadios">Gender</label>
+                    <div class="genderContainer" id="maleContainer">
+                        <input class="inputRadio" type="radio" name="gender" id="male">
+                        <label for="male" class="label labelRadio">Male</label>
+                    </div>
+                    <div class="genderContainer" id="femaleContainer">
+                        <input class="inputRadio" type="radio" name="gender" id="female">
+                        <label for="female" class="label labelRadio">Female</label>
+                    </div>
+                    <div class="genderContainer" id="otherContainer">
+                        <input class="inputRadio" type="radio" name="gender" id="other">
+                        <label for="other" class="label labelRadio">Other</label>
+                    </div>
+                </div>
+                <div class="inputContainer inputBdayContainer">
+                    <label for="birthdate" class="label labelDate">Birthdate</label>
+                    <p class="mistakeText" id="birthdateMistakeText">Enter your birthdate</p>
+                    <input type="text" name="birthdate" id="birthdate" class="inputText inputBday"
+                        placeholder="DD-MM-YYYY" required>
+                </div>
+            </div>  -->
+            <button class="btn">Sign Up</button>
+        </div>
+    </div>
+
+    <script src="/assets/FormValidator/FormValidator.js"></script>
+</body>
+
+</html>
