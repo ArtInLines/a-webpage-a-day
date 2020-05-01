@@ -1,92 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@500&family=Work+Sans:wght@500&display=swap');
+
+#select {
+	font-family: 'Work Sans', sans-serif;
+	position: absolute;
+	right: 2em;
+	top: 0.75em;
+	outline: none;
+	font-size: 1rem;
+	background-color: transparent;
+	color: #aaa;
+	transition: all ease-in-out;
+	transition-duration: 0.3s;
+}
+
+#select:hover {
+	color: #eee;
+}
+
+#select:active {
+	color: #eee;
+}
+
 #title {
-  text-align: center;
-  display: block;
-  margin: 0;
-  padding-top: 0.4em;
+	text-align: center;
+	display: block;
+	margin: 0;
+	padding-top: 0.4em;
 }
 
 .char {
-  display: inline-block;
-  padding: 0;
-  margin: 0 5vw;
+	display: inline-block;
+	padding: 0;
+	margin: 0 5vw;
 }
 
 .charName {
-  font-size: 1.3em;
-  margin: 0.5em 0;
-  text-align: center;
-  text-decoration: underline;
+	font-size: 1.3em;
+	margin: 0.5em 0;
+	text-align: center;
+	text-decoration: underline;
 }
 
 .charImg {
-  width: 39vw;
-  height: 60vh;
-  border: 3px solid #333;
-  border-radius: 20px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  cursor: pointer;
+	width: 39vw;
+	height: 60vh;
+	border: 3px solid #333;
+	border-radius: 20px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	cursor: pointer;
 }
 
 .charImg:hover {
-  border: 4px solid black;
+	border: 4px solid black;
 }
 
 .charImg:active {
-  border: 6px solid black;
+	border: 6px solid black;
+}
+
+#p {
+	font-family: 'Work Sans', sans-serif;
+	text-align: center;
+	font-size: 1em;
+	padding-top: 0.5em;
+}
+
+code {
+	font-family: 'Fira Code', monospace;
+	font-size: 1em;
+	color: dodgerblue;
+	text-decoration: underline;
+}
+
+#winner {
+	color: dodgerblue;
+	text-decoration: underline;
+}
+
+#loser {
+	color: crimson;
+	text-decoration: none;
 }
 
 #btn {
-  display: block;
-  margin: 2em auto 5px auto;
-  font-size: 1.3em;
-  background-color: transparent;
-  border: 3px solid #333;
-  border-radius: 15px;
-  padding: 5px 5px 8px 5px;
-  cursor: pointer;
-  min-width: 5em;
-  outline: none;
+	display: block;
+	margin: 2em auto 5px auto;
+	font-size: 1.3em;
+	background-color: transparent;
+	border: 3px solid #333;
+	border-radius: 15px;
+	padding: 5px 5px 8px 5px;
+	cursor: pointer;
+	min-width: 5em;
+	outline: none;
 }
 
 #btn:hover {
-  border: 4px solid black;
+	border: 4px solid black;
 }
 
 #btn:active {
-  border: 6px solid black;
+	border: 6px solid black;
 }
 
 #endList {
-  margin: 0 auto;
-  width: max-content;
+	margin: 0 auto;
+	width: max-content;
 }
 
 #endList > li {
-  margin: 0.6em;
-  font-size: 1.15em;
-  list-style-type: decimal;
+	margin: 0.6em;
+	font-size: 1.15em;
+	list-style-type: decimal;
+}
+
+#endBtns {
+	height: 4em;
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.gold {
+	color: gold;
+}
+
+.silver {
+	color: silver;
+}
+
+.bronze {
+	color: #cd7f32;
 }
 
 #showMoreBtnsContainer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .showMoreBtn {
-  display: inline-block;
-  cursor: pointer;
-  font-size: 1em;
-  background-color: none;
-  margin: 10px 1em;
-  border: none;
-  color: black;
-  outline: none;
+	display: inline-block;
+	cursor: pointer;
+	font-size: 1em;
+	background-color: none;
+	margin: 10px 1em;
+	border: none;
+	color: black;
+	outline: none;
 }
 
 .showMoreBtn:hover {
-  transition-duration: 0.3s;
-  color: dodgerblue;
+	transition-duration: 0.3s;
+	color: dodgerblue;
+}
+
+@media (max-width: 900px) {
+	.charName {
+		font-size: 1.2em;
+	}
+}
+
+@media (max-width: 850px) {
+	.charName {
+		font-size: 1.1em;
+	}
+}
+
+@media (max-width: 800px) {
+	.charName {
+		font-size: 1em;
+		width: 39vw;
+	}
+	.char {
+		margin: 0 5vw;
+	}
+}
+
+@media (max-width: 700px) {
+	.charImg {
+		height: 55vh;
+	}
+}
+
+@media (max-width: 600px) {
+	.charImg {
+		height: 50vh;
+	}
+}
+
+@media (max-width: 500px) {
+	.navbar {
+		height: 5em;
+	}
+	.currentPage {
+		width: 100vw;
+		text-align: center;
+		position: absolute;
+		bottom: 0.5em;
+	}
+	.content {
+		padding-top: 5em;
+	}
+}
+
+@media (max-width: 400px) {
+	.charImg {
+		height: 45vh;
+	}
+}
+
+@media (max-width: 350px) {
+	.charImg {
+		height: 40vh;
+	}
+}
+
+@media (max-width: 300px) {
+	.charImg {
+		height: 30vh;
+		width: 100vw;
+		margin: 0 auto;
+	}
+	.charName {
+		font-size: 1.2em;
+		width: 100vw;
+		text-align: center;
+	}
 }
