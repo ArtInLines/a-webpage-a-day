@@ -12,13 +12,12 @@ input {
 }
 
 .numInput {
-	width: 2.5em;
-	min-width: fit-content;
+	width: 3em;
 }
 
 .textInput {
 	width: 7em;
-	border-bottom: black solid 2px;
+	border-bottom: #555 solid 2px;
 }
 
 #result {
