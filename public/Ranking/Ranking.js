@@ -1,6 +1,6 @@
-import { charArray } from 'assets/Ranking/charArray.js';
-import { arrayHouses } from 'assets/Ranking/arrayHouses.js';
-import { arrayBooks } from 'assets/Ranking/arrayBooks.js';
+import { charArray } from '/assets/Ranking/charArray.js';
+import { arrayHouses } from '/assets/Ranking/arrayHouses.js';
+import { arrayBooks } from '/assets/Ranking/arrayBooks.js';
 
 let arrayPOVChars = [];
 charArray.forEach((element) => {
