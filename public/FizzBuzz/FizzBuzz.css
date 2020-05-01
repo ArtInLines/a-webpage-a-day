@@ -2,6 +2,24 @@
 	margin: 1em;
 }
 
+input {
+	outline: none;
+	background-color: transparent;
+	color: #000;
+	font-size: 1em;
+	border: none;
+	padding: 3px;
+}
+
+.numInput {
+	width: 2em;
+}
+
+.textInput {
+	width: 7em;
+	border-bottom: black solid 2px;
+}
+
 #result {
 	padding: 0;
 }
