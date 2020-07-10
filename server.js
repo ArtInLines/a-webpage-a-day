@@ -35,6 +35,9 @@ app.use(favicon(`${__dirname}/public/favicon.ico`))
 	.get('/FormValidator', (req, res) => {
 		res.sendFile(`${__dirname}/public/FormValidator/FormValidator.html`);
 	})
+	.get('/Draw', (req, res) => {
+		res.sendFile(`${__dirname}/public/Draw/Draw.html`);
+	})
 	/*   
 	.get('/{{Title}}', (req, res) => {
     	res.sendFile(`${__dirname}/public/{{Title}}/{{Title}}.html`)
